@@ -1,4 +1,4 @@
-# to use component-library in component-library-client
+# For using component-library in component-library-client
 
 Step 1: Edit package.json
         provide local path of your TGZ file to this key- 
