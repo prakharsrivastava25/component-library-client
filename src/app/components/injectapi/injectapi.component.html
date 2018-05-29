@@ -1,0 +1,33 @@
+<!--
+<div style="color: black;">
+  <!<img src="https://media.giphy.com/media/13Ae8fXHtwHp9C/giphy.gif">-->
+<!-- </div>  -->
+<div class="container">
+    <!-- <div class="row">
+      <div class="col-md-6">HI </div>
+      <div class="col-md-6"> HELLO</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">How are you</div>
+      <div class="col-md-4">Bootstrap Grid</div>
+      <div class="col-md-4">working</div>
+    </div> -->
+
+    <div style="padding:10px;height: 100%;">
+      <div style="width:100%;height: 100%;display: flex">
+        <div class="myDiv">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Textarea</span>
+            </div>
+            <textarea class="form-control" aria-label="Textarea" #text></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" (click)="injectComponent(text.value)">Click Me</button>
+        </div>
+        <div style="width:10px"></div>
+        <div class="myDiv">
+          <template #formContainer></template>
+        </div>
+      </div>
+    </div>
+  </div>

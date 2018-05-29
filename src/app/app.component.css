@@ -1,0 +1,33 @@
+h3 {
+  color: blue
+}
+.customRow{
+  /* width: 100%; */
+  margin: 0;
+}
+
+.whov:hover { background-color: #00695c!important; }
+.view {
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+.secondbase {
+    background-color: rgba(255,255,255,.6);
+    margin-top: -90px;
+}
+.main-container {
+  margin-top: 5%;
+  margin-left: 22%;
+  padding: 15px;
+  -ms-overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .main-container {
+      margin-left: 0px !important;
+  }
+}

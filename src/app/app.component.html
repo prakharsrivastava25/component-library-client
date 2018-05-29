@@ -1,0 +1,74 @@
+<!-- The content below is only a placeholder and can be replaced.
+  <div class="container">
+    <nav class="navbar navbar-light bg-light" style="color: #ee534f">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </nav>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+
+
+    <hr>
+    <ngb-tabset>
+      <ngb-tab title="Modal">
+        <ng-template ngbTabContent>
+           <button type="button" class="btn btn-secondary">
+                Click Me
+              </button>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Second">
+        <ng-template ngbTabContent>
+          <p>Content for tab 2</p>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Third">
+        <ng-template ngbTabContent>
+          <p>Content for tab 3</p>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Fourth">
+        <ng-template ngbTabContent>
+          <p>This is the content of the first tab!</p>
+          <ngb-alert [dismissible]="false">
+            <strong>Warning!</strong> This is an alert!
+          </ngb-alert>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+     app-header and app-dv-button are the selectors of respective module
+    created in our comp library
+    <hr>
+    <app-header> test header</app-header>
+    <hr> SIZE of the page is &nbsp;
+    <b>Height:</b> {{ mobHeight }} &nbsp;
+    <b>Width:</b> {{ mobWidth }} &nbsp;
+    <b>Mobile Browser:</b>: {{isMobile}} &nbsp;
+    <hr>
+  </div>
+ -->
+ <div>
+  <!-- <app-av-nav-bar>
+    <app-av-nav-group>
+      <app-av-nav-item *ngIf="menuControlValue">
+      </app-av-nav-item>
+    </app-av-nav-group>
+  </app-av-nav-bar> -->
+  <app-av-nav-bar [inputData]="dataInput" [inputKey]="keyInput" (dvWebComponentEvent)="eventReceived($event)"></app-av-nav-bar>
+  <!-- <app-av-sidebar > -->
+    <!-- <app-uitree [data]="dataInput" [key]="keyInput"></app-uitree> -->
+  <!-- </app-av-sidebar> -->
+  <!-- <app-av-sidebar [inputData]="dataInput" [inputKey]="keyInput" (dvWebComponentEvent)="eventReceived($event)" ></app-av-sidebar> -->
+  <!-- <app-av-checkboxes
+  *ngFor="let cbEle of checkboxProp"
+  [checkboxProp]="cbEle"
+  ></app-av-checkboxes> -->
+ </div>
+ <section class="main-container">
+    <router-outlet></router-outlet>
+</section>

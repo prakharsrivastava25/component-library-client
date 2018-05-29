@@ -1,0 +1,16 @@
+<div style="padding:10px;height: 100%;">
+  <div style="width:100%;height: 100%;display: flex">
+    <div class="myDiv">
+      <app-av-card (cardInitiated)= "cardPropRecieved($event)"
+      (cardButtonClicked) = "cardValueChange($event)"
+      [cardProperties]="cardPropertiesOne">
+      </app-av-card>
+    </div>
+    <div style="width:10px"></div>
+    <div class="myDiv">
+      <app-av-card (cardInitiated)= "cardPropRecieved($event)"
+      [cardProperties]="cardPropertiesTwo">
+      </app-av-card>
+    </div>
+  </div>
+</div>
